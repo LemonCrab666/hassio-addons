@@ -24,10 +24,8 @@
     "TZ": "Asia/Shanghai"
   },
 
-  "ingress": true,   
+  "ingress": true, 
   "ingress_port": 5700,    
   "ingress_stream": true,  
   "panel_icon": "mdi:web",  
-  "panel_title": "Qinglong 面板",
-  "webui": "http://[HOST]:[PORT:5700]"
 }
