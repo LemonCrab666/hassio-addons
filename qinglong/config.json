@@ -12,7 +12,7 @@
     "5700/tcp": 5700
   },
   "map": [
-    "addons:rw"
+    "addon_config:rw"
   ],
   "options": {
     "TZ": "Asia/Shanghai"
@@ -28,6 +28,11 @@
   "ingress_stream": true,
   "panel_icon": "mdi:web",
   "volumes": {
-    "/ql/data": "/addons/data/qinglong"
-  }
+    "/ql/data": "/addon_config/qinglong"
+  },
+  "backup_exclude": [
+    "*/logs"
+  ],
+  "webui": "http://[HOST]:[PORT:5700]",
+  "panel_title": "青龙面板"
 }
