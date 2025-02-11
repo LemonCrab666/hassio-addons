@@ -1,10 +1,9 @@
-
 {
   "name": "Qinglong",
   "version": "latest",
   "slug": "qinglong",
   "description": "青龙面板，一个支持 Python3、Shell、JS 脚本的定时任务管理平台。",
-  "url": "https://github.com/LemonCrab666/hassis-addons/qinglong",
+  "url": "https://github.com/LemonCrab666/hassio-addons/qinglong",
   "arch": ["aarch64", "amd64", "armv7"],
   "image": "whyour/qinglong",
   "startup": "services",
@@ -20,5 +19,11 @@
   },
   "schema": {
     "TZ": "str"
+  },
+  "env": {
+    "TZ": "Asia/Shanghai"
+  },
+  "volume": {
+    "/ql/data": "/config/qinglong"
   }
 }
