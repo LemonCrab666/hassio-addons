@@ -28,6 +28,6 @@
   "ingress_stream": true,
   "panel_icon": "mdi:web",
   "volumes": {
-    "/ql/data": "/config/addon_configs/qinglong"
+    "/ql/data": "/config/addons/data/qinglong"
   }
 }
