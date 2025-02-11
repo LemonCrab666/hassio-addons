@@ -1,5 +1,5 @@
 {
-  "name": "Qinglong",
+  "name": "青龙面板",
   "version": "latest",
   "slug": "qinglong",
   "description": "青龙面板，一个支持 Python3、Shell、JS 脚本的定时任务管理平台。",
