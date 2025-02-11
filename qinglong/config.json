@@ -26,7 +26,7 @@
   "ingress": true,
   "ingress_port": 5700,
   "ingress_stream": true,
-  "panel_icon": "mdi:web"
+  "panel_icon": "mdi:web",
   "webui": "http://[HOST]:[PORT:5700]",
   "panel_title": "青龙面板"
 }
