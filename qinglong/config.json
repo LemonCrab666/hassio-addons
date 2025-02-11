@@ -26,9 +26,7 @@
   "ingress": true,
   "ingress_port": 5700,
   "ingress_stream": true,
-  "panel_icon": "mdi:web",
-  "volumes": {
-    "/ql/data": "/addon_config/qinglong"
+  "panel_icon": "mdi:web"
   },
   "backup_exclude": [
     "*/logs"
