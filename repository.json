@@ -7,7 +7,7 @@
       "name": "Qinglong",
       "slug": "qinglong",
       "description": "青龙面板，一个支持 Python3、Shell、JS 脚本的定时任务管理平台。",
-      "url": "https://github.com/yourusername/qinglong-addon/qinglong",
+      "url": "https://github.com/LemonCrab666/hassio-addons/qinglong",
       "version": "latest",
       "stage": "stable",
       "homeassistant": "2023.0.0",
