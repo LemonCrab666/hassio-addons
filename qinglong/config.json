@@ -9,8 +9,7 @@
   "startup": "services",
   "boot": "auto",
   "ports": {
-    "5700/tcp": 5700,
-    "5700/udp": 5700,
+    "5700/tcp": 5700
   },
   "map": [
     "config:rw"
