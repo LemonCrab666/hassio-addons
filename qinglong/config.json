@@ -23,9 +23,11 @@
   "env": {
     "TZ": "Asia/Shanghai"
   },
-
-  "ingress": true, 
-  "ingress_port": 5700,    
-  "ingress_stream": true,  
-  "panel_icon": "mdi:web",  
+  "ingress": true,
+  "ingress_port": 5700,
+  "ingress_stream": true,
+  "panel_icon": "mdi:web",
+  "volumes": {
+    "/ql/data": "/config/addon_configs/qinglong"
+  }
 }
