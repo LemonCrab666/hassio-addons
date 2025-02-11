@@ -12,7 +12,7 @@
     "5700/tcp": 5700
   },
   "map": [
-    "config:rw"
+    "addons:rw"
   ],
   "options": {
     "TZ": "Asia/Shanghai"
@@ -28,6 +28,6 @@
   "ingress_stream": true,
   "panel_icon": "mdi:web",
   "volumes": {
-    "/ql/data": "/config/addons/data/qinglong"
+    "/ql/data": "/addons/data/qinglong"
   }
 }
