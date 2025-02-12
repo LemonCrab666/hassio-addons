@@ -1,6 +1,0 @@
-build_from:
-  aarch64: whyour/qinglong:latest
-  amd64: whyour/qinglong:latest
-  armhf: whyour/qinglong:latest
-  armv7: whyour/qinglong:latest
-  i386: whyour/qinglong:latest
