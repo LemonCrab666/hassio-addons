@@ -1,23 +1,23 @@
 {
-  "name": "Qinglong"，
-  "version": "latest"，
-  "slug": "qinglong"，
-  "description": "青龙面板，一个支持 Python3、Shell、JS 脚本的定时任务管理平台。"，
-  "url": "https://github.com/yourusername/qinglong-addon/qinglong"，
-  "arch": ["aarch64"， "amd64"， "armv7"]，
-  "image": "whyour/qinglong"，
-  "startup": "services"，
-  "boot": "auto"，
+  "name": "Qinglong",
+  "version": "latest",
+  "slug": "qinglong",
+  "description": "，一个支持 Python3、Shell、JS 脚本的定时任务管理平台。",
+  "url": "https://github.com/LemonCrab666/hassio-addons/tree/master/qinglong",
+  "arch": ["aarch64"， "amd64"， "armv7"],
+  "image": "whyour/qinglong",
+  "startup": "services",
+  "boot": "auto",
   "ports": {
     "5700/tcp": 5700
-  }，
+  },
   "map": [
-    "config:rw"，            # 允许配置文件可写
+    "config:rw",            # 允许配置文件可写
     "/mnt/data/ql_data:/ql/data"   # 将宿主机目录挂载到容器的 /ql/data
-  ]，
+  ],
   "options": {
     "TZ": "Asia/Shanghai"
-  }，
+  },
   "schema": {
     "TZ": "str"
   }
