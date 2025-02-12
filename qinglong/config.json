@@ -1,22 +1,32 @@
 {
-  "name": "QingLong",
+  "name": "Qinglong",
   "version": "1.0.0",
   "slug": "qinglong",
   "description": "一个支持 Python3、Shell、JS 脚本的定时任务管理平台。",
-  "arch": ["aarch64", "armv7", "amd64"],
-  "startup": "before",
+  "startup": "services",
   "boot": "auto",
-  "host_network": false,
-  "ports": {
-    "5700/tcp": 5700
-  },
-  "map": [
-    "addon_configs:/ql/data"
-  ],
+  "url": "https://github.com/whyour/qinglong",
+  "arch": ["aarch64", "amd64", "armv7", "armhf"],
+  "image": "whyour/qinglong:latest",
   "options": {
-    "timezone": "Asia/Shanghai"
+    "data_folder": "/config/addons_config/ql_data"
   },
   "schema": {
-    "timezone": "str"
-  }
+    "data_folder": "str"
+  },
+  "ports": {
+    "5700": 5700
+  },
+  "map": [
+    "config:rw",
+    "addons_config:rw"
+  ],
+  "services": [
+    {
+      "name": "qinglong",
+      "service": "qinglong",
+      "restart": "always",
+      "command": "/bin/bash -c 'docker-entrypoint.sh'"
+    }
+  ]
 }
