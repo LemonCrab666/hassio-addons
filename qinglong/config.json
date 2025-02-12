@@ -4,8 +4,8 @@
   "slug": "qinglong"，
   "description": "一个支持 Python3、Shell、JS 脚本的定时任务管理平台。"，
   "arch": ["aarch64"， "amd64"， "armhf"， "armv7"， "i386"]，
-  "startup": "application"，
-  "boot": "auto"，
+  "startup": "application"
+  "boot": "auto"
   "ports": {
     "5700/tcp": 5700
   }，
