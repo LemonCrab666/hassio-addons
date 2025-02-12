@@ -1,29 +1,25 @@
 {
-  "name": "Qinglong"，
-  "version": "latest"，
+  "name": "QingLong"，
+  "version": "2.11.3"，
   "slug": "qinglong"，
-  "description": "青龙面板，一个支持 Python3、Shell、JS 脚本的定时任务管理平台。"，
-  "url": "https://github.com/yourusername/qinglong-addon/qinglong"，
-  "arch": ["aarch64"， "amd64"， "armv7"]，
-  "image": "whyour/qinglong"，
-  "startup": "services"，
+  "description": "一个支持 Python3、Shell、JS 脚本的定时任务管理平台。"，
+  "arch": ["aarch64"， "amd64"， "armhf"， "armv7"， "i386"]，
+  "startup": "application"，
   "boot": "auto"，
   "ports": {
     "5700/tcp": 5700
   }，
-  "map": [
-    "addon_config:rw"
-  ]，
+  "ports_description": {
+    "5700/tcp": "Web interface"
+  }，
+  "volumes": {
+    "data": "/ql/data:rw"
+  }，
   "options": {
     "TZ": "Asia/Shanghai"
   }，
   "schema": {
-    "TZ": "str"
+    "TZ": "str?"
   }，
-  "env": {
-    "TZ": "Asia/Shanghai"
-  }，
-  "volume": {
-    "/ql/data": "/config/qinglong"
-  }
+  "image": "whyour/qinglong:latest"
 }
