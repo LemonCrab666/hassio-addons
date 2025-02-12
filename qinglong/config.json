@@ -27,5 +27,5 @@
     "schema": {
         "TZ": "str?"
     },
-    "image": "whyour/qinglong:latest"
+    "image": "docker.io/whyour/qinglong:latest"
 }
