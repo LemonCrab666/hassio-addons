@@ -12,7 +12,7 @@
     "5700/tcp": 5700
   }，
   "map": [
-    "config:rw",            # 允许配置文件可写
+    "config:rw"，            # 允许配置文件可写
     "/mnt/data/ql_data:/ql/data"   # 将宿主机目录挂载到容器的 /ql/data
   ]，
   "options": {
