@@ -21,11 +21,6 @@
     "addons_config:rw"
   ],
   "services": [
-    {
-      "name": "qinglong",
-      "service": "qinglong",
-      "restart": "always",
-      "command": "/bin/bash -c 'docker-entrypoint.sh'"
-    }
+    "/bin/bash -c 'docker-entrypoint.sh'"
   ]
 }
